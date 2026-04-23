@@ -1,0 +1,9 @@
+{
+  "name": "Remix: RS",
+  "description": "A minimalist, modern personal knowledge hub for sharing videos, reflections, articles, and weekly learnings with a focus on clean design and AI-powered insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

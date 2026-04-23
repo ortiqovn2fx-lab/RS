@@ -1,0 +1,98 @@
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --border-color: #f3f4f6;
+  --card-bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --border-color: #1f2937;
+  --card-bg: #141414;
+}
+
+.cream {
+  --bg-primary: #fdfcf7;  /* Soft Vanilla */
+  --bg-secondary: #f7f5e6; /* Smooth Custard */
+  --text-primary: #3c3a34; /* Dark Coffee */
+  --text-secondary: #8c8273; /* Taupe */
+  --border-color: #e8e4d3; /* Champagne Border */
+  --card-bg: #ffffff;
+}
+
+/* Apply theme variables to core elements */
+body, .bg-white, .bg-gray-50, .bg-white\/95, .bg-white\/80 {
+  background-color: var(--bg-primary) !important;
+}
+
+.bg-gray-50\/30, .bg-gray-50\/20, .bg-gray-50\/50, .bg-gray-50 {
+  background-color: var(--bg-secondary) !important;
+}
+
+.text-gray-900, .text-gray-800, .text-black, h1, h2, h3, h4, .serif {
+  color: var(--text-primary) !important;
+}
+
+.text-gray-400, .text-gray-500, .text-gray-600, .text-gray-700 {
+  color: var(--text-secondary) !important;
+}
+
+.border-gray-100, .border-gray-50, .border-gray-50\/50, .border-gray-200 {
+  border-color: var(--border-color) !important;
+}
+
+.bg-white.rounded-2xl, .bg-white.rounded-3xl, .bg-white.rounded-\[2\.5rem\], .bg-white.rounded-xl {
+  background-color: var(--card-bg) !important;
+}
+
+input, textarea {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+nav, footer {
+  border-color: var(--border-color) !important;
+}
+
+.text-indigo-500 {
+  color: #818cf8 !important; /* Slightly lighter indigo for dark modes */
+}
+
+.bg-indigo-50 {
+  background-color: rgba(129, 140, 248, 0.1) !important;
+}
+
+.chat-markdown a {
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+.chat-markdown a:hover {
+  opacity: 0.7;
+}
+
+.bg-black .chat-markdown a {
+  color: #60a5fa; /* Blue-400 for black background */
+}
+
+.bg-gray-100 .chat-markdown a {
+  color: #2563eb; /* Blue-600 for grey background */
+}
+
+/* Ensure markdown paragraphs don't add unwanted margins in chat bubbles */
+.chat-markdown p {
+  margin: 0;
+}
